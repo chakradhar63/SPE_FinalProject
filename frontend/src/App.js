@@ -45,5 +45,4 @@ export function ProtectedRoute(props)
     else{
       return <Redirect to='/login'/>
     }
-
 }
