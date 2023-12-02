@@ -18,5 +18,3 @@ spec:
           image: chakradhar63/frontend-image:latest
           ports:
             - containerPort: 3000
-
-
