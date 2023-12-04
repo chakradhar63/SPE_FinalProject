@@ -34,4 +34,3 @@ spec:
             secretKeyRef:
               name: RideReady-backend-secret
               key: JWT
-

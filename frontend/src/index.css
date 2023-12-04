@@ -125,8 +125,6 @@ button{
   transform: translateY(-50% , -50%);
   font-size:45px;
   opacity: 0.2 !important;
-  
-
 }
 .login a{
   color: white !important;

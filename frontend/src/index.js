@@ -8,6 +8,7 @@ import {Provider} from 'react-redux'
 
 require('dotenv').config();
 
+
 const mongoConnection = process.env.MONGO;
 const jwtSecret = process.env.JWT;
 
