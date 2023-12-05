@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-deployment
-  namespace: RideReady-app
+  namespace: ride-ready-app
 spec:
   selector:
     matchLabels:
@@ -27,10 +27,10 @@ spec:
         - name: MONGO
           valueFrom:
             secretKeyRef:
-              name: RideReady-backend-secret
+              name: ride-ready-backend-secret
               key: MONGO
         - name: JWT
           valueFrom:
             secretKeyRef:
-              name: RideReady-backend-secret
+              name: ride-ready-backend-secret
               key: JWT
