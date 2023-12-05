@@ -1,6 +1,6 @@
 [ansible_nodes]
 localhost ansible_user=chakradhar ansible_python_interpreter=/usr/bin/python3
-localhost ansible_connection=local kube_config=/home/chakradhar/.kube/config
+localhost ansible_connection=local kube_config=/home/chakradhar/.kube/config remote_src=yes
 
 [ansible_nodes:vars]
 ansible_connection=local
