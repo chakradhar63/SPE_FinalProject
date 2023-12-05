@@ -1,9 +1,9 @@
 ---
-- name: Deploy MERN Application
+- name: Deploy RideReady Application
   hosts: all
   become: true
-  vars:
-    ansible_become_pass: "Ansible321@"
+  # vars:
+  #   ansible_become_pass: "Ansible321@"
 
   tasks:
     - name: Copy Docker Compose file
