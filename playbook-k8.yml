@@ -13,7 +13,7 @@
     - name: Apply Secrets
       kubernetes.core.k8s:
         state: present
-        definition: "{{ lookup('file', './k8/RideReady-backend-secret.yaml') | from_yaml }}"
+        definition: "{{ lookup('file', './k8/ride-ready-backend-secret.yaml') | from_yaml }}"
 
     - name: Create Frontend Deployment
       kubernetes.core.k8s:
@@ -45,4 +45,4 @@
     - name: Create Ingress
       kubernetes.core.k8s:
         state: present
-        definition: "{{ lookup('file', './k8/RideReady-ingress.yaml') | from_yaml }}" 
+        definition: "{{ lookup('file', './k8/ride-ready-ingress.yaml') | from_yaml }}" 
