@@ -6,11 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import store from './redux/store';
 import {Provider} from 'react-redux'
 
-require('dotenv').config();
+// require('dotenv').config();
 
 
-const mongoConnection = process.env.MONGO;
-const jwtSecret = process.env.JWT;
+// const mongoConnection = process.env.MONGO;
+// const jwtSecret = process.env.JWT;
 
 ReactDOM.render(
   <Provider store={store}>
