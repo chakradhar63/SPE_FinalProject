@@ -40,11 +40,11 @@
         kubeconfig: "/home/chakradhar/.kube/config"
         definition: "{{ lookup('file', './k8/backend-service.yaml') | from_yaml }}"
 
-    # - name: Create Config Map
-    #   kubernetes.core.k8s:
-    #     state: present
-    #     kubeconfig: "/home/chakradhar/.kube/config"
-    #     definition: "{{ lookup('file', './k8/frontend-configmap.yaml') | from_yaml }}" 
+    - name: Create Config Map
+      kubernetes.core.k8s:
+        state: present
+        kubeconfig: "/home/chakradhar/.kube/config"
+        definition: "{{ lookup('file', './k8/frontend-configmap.yaml') | from_yaml }}" 
 
     - name: Create Ingress
       kubernetes.core.k8s:
