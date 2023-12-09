@@ -10,8 +10,6 @@ function connectDB(){
     connection.on('error' , ()=>{
         console.log('Mongo DB Connection Error')
     })
-
-
 }
 
 connectDB()
