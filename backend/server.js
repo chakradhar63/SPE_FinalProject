@@ -8,10 +8,12 @@ app.use('/api/cars/' , require('./routes/carsRoute'))
 app.use('/api/users/' , require('./routes/usersRoute'))
 app.use('/api/bookings/' , require('./routes/bookingsRoute'))
 
+
 const path = require('path')
 
 if(process.env.NODE_ENV==='production')
 {
+
     app.use('/' , express.static('client/build'))
 
     app.get('*' , (req , res)=>{
