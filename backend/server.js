@@ -25,9 +25,4 @@ if(process.env.NODE_ENV==='production')
 }
 
 app.get('/', (req, res) => res.send('Hello World!'))
-
-
- 
-
-
 app.listen(port, () => console.log(`Node JS Server Started in Port ${port}`))
