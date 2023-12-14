@@ -15,6 +15,9 @@ pipeline{
                 dir('frontend'){
                     sh "npm install"
                 }
+                dir('backend'){
+                    sh "npm install"
+                }
             }
         }
         stage('Build Frontend Image') {
