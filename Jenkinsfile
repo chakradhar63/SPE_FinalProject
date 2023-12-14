@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage('Clone Git'){
             steps{
-                git 'https://github.com/chakradhar63/Ride_Ready'
+                git 'https://github.com/chakradhar63/SPE_FinalProject'
             }
         }
         stage('Testing'){
